@@ -8,6 +8,3 @@ def cacti_number(func):
         return count
     num = wrapper(array)
     return num
-
-array = [[0, 1, 1, 1], [0, 0, 0, 1], [1, 0, 0, 0]]
-print(cacti_number(array))

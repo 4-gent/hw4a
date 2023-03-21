@@ -4,6 +4,3 @@ def sort_dictionary(dictionary):
     for i in temp:
         output = output + i[:-1]
     return output
-
-temp = {'Tom': (5464512, 24), 'Sara': (5446897, 32), 'Mary': (1557896, 20)}
-print(sort_dictionary(temp))
