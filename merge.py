@@ -1,9 +1,14 @@
 def merge(l1, l2):
-    sorted = l1 + l2
-    for i in range(len(sorted) - 1):
-        for j in range(i):
-            if(sorted[i] < sorted[j]):
-                temp = sorted[j]
-                sorted[j] = sorted[i]
-                sorted[i] = temp
-    return sorted
+    result = []
+    i = 0
+    j = 0
+    while i < len(l1) and j < len(l2):
+        if l1[i] < l2[j]:
+            result.append(l1[i])
+            i += 1
+        else:
+            result.append(l2[j])
+            j += 1
+    result += l1[i:]
+    result += l2[j:]
+    return result
