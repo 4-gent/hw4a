@@ -1,0 +1,17 @@
+Q1: Does the change inside increment_int_a change the variable a after the function call?
+Q2: Does the change inside increment_int_b change the variable b after the function call?
+Q3: If they differ answer why? if not why not?
+
+def increment_int_a(someval):
+    someval += 1
+def increment_int_b(someval):
+    someval[0] += 1
+def main():
+    a = 32
+    increment_int_a(a)
+    b = [32]
+    increment_int_b(b)
+
+Q1 Answer: Does not change the value of a it should still be 32
+Q2 Answer: Would change the value of b it'll be 33
+Q3 Answer: They differ because someval is being updated but not being returned for increment_int_a while for increment_int_b since it is an array, the array value is in fact being updated.
