@@ -6,7 +6,5 @@ def cacti_number(func):
                 if arr[i][j] == 1:
                     count += 1
         return count
-    num = wrapper(array)
+    num = wrapper()
     return num
-
-array = [[0, 1, 1, 1], [0, 0, 0, 1], [1, 0, 0, 0]]
